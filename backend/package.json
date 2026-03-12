@@ -1,0 +1,34 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r dotenv/config src/index.js",
+    "dev": "nodemon --inspect -r dotenv/config src/index.js",
+    "debug": "node --inspect -r dotenv/config src/index.js",
+    "debug:break": "node --inspect-brk -r dotenv/config src/index.js",
+    "debug:watch": "nodemon --inspect -r dotenv/config src/index.js",
+    "seed": "node -r dotenv/config src/seed.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "date-fns": "^4.1.0",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.10.1",
+    "mysql2": "^3.19.0",
+    "nodemailer": "^7.0.13",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
